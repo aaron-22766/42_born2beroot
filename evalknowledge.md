@@ -90,7 +90,10 @@
 - you should use it to maintain your privacy on the internet
 
 #### How does my monitoring.sh work?
-- 
+- wall command writes a message to all users across all logged in terminals
+- a few commands and files give us the necessary information
+- by using pipes as well as the commands grep, awk and others (uniq, wc I used), I formatted the output of these commands and files the way we want them to be displayed in the message
+- to make everything more readable, I first save all the info in variables which are then used in the wall message
 
 #### What is cron?
 - it’s a scheduling tool
