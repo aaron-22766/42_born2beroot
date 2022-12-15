@@ -54,11 +54,11 @@
 - to test applications in a safe, sandboxed environment
 
 #### Differences between aptitude and apt
-|  Apt                          |  Aptitude                                 |
-|-------------------------------|-------------------------------------------|
-|  lower-level package manager  |  higher-level package manager             |
-|  apt-get                      |  offers apt-get, apt-mark, and apt-cache  |
-|  command-line interface       |  command-line interface & interactive UI  |
+|  Apt                          |  Aptitude                                          |
+|-------------------------------|----------------------------------------------------|
+|  lower-level package manager  |  higher-level package manager                      |
+|  offers most commonly used commands of apt-get and apt-cache  |  offers apt-get, apt-mark, and apt-cache commands  |
+|  command-line interface       |  command-line interface & interactive UI           |
 
 #### What is AppArmor?
 - effective and easy-to-use Linux application security system
