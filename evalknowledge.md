@@ -86,9 +86,8 @@
 
 #### How does LVM work?
 - LVM = Logical Volume Manager
-- physical volume layer (PV) consists of one or more physical volumes (hard drives) or partitions
-- volume group (VG) is comprised of one or more PVs - organizational group of the lvm
-- logical volume (LV) are created from VGs, which are mounted on the system to be used as storage for the users. LVs can be added, removed, resized on the fly
+
+It works by chunking the physical volumes (PVs) into physical extents (PEs). Extents are small, fixed-size chunks of memory and the size is determined by the volume group. The PEs are mapped onto logical extents (LEs) which are then pooled into volume groups (VGs). These groups are linked together into logical volumes (LVs) that act as virtual disk partitions and that can be managed as such by using LVM. The logical extents bring great flexibility because they are presented as a unified device by LVM but do not have to map to continuous physical extents. LVM can copy and reorganize the physical extents that compose a logical volume without any interruption to users. Logical volumes can also be easily expanded or shrunk by simply adding extents to or removing extents from the volume.
 
 ![LVM layout](https://cdn.thegeekdiary.com/wp-content/uploads/2014/10/LVM-basic-structure.png)
 
@@ -103,12 +102,12 @@
 - UFW = Uncomplicated Firewall
 - utility designed to simplify the setup and management of firewall rules (ip-tables rules)
 - gives us control of who or what is able to access the server and restrict traffic by only allowing certain ports
-- protects from accidents (example: an inexperienced user accidentally opens ports without knowing it)
+- protects from accidents -> example: an inexperienced user accidentally opens ports without knowing it
 - it therefore adds extra layers of security
 
 #### What is SSH and why use it?
 - SSH = Secure (Socket) Shell
-- secure protocol sending encrypted information between servers
+- secure protocol for sending encrypted information or setting up a secure connection between computers (based on IP address)
 - uses public key pairs or asymmetric cryptography to authenticate hosts -> example: person A sends locked suitcase to person B who attaches his own lock and sends it back to person A who removes his own lock and sends it back to person B who can now remove his own lock and access the contents of the suitcase (suitcase was locked through the entire shipping procedure = secure from unwanted access)
 - you should use it to maintain your privacy on the internet
 
