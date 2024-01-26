@@ -25,4 +25,5 @@ This document is a System Administration related exercise. This project aims to 
 ## 🗒 Notice
 
 Everything I learned in this project, I documented in [evalknowledge.md](https://github.com/aaron-22766/42_born2beroot/blob/main/evalknowledge.md).
+
 The script that was set up to run from the cron job and prints different information about the maching is [monitoring.sh](https://github.com/aaron-22766/42_born2beroot/blob/main/monitoring.sh).
